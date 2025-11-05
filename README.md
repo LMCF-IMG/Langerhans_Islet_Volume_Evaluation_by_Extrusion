@@ -2,6 +2,9 @@
 
 **Macro for [ImageJ/Fiji](https://fiji.sc/).**
 
+It was developed in cooperation with **Dr. David Habart**, from the [Laboratory for Pancreatic Islets, Center for Experimental Medicine, Institute for Clinical and
+Experimental Medicine (IKEM), Prague, Czech Republic](https://www.ikem.cz/en/centrum-exp-mediciny/oddeleni-centra/laborator-langerhansovych-ostruvku-lloe/a-1671/) who provided image data for testing and valuable feedback comments.
+
 ## Overview
 
 The macro uses the technique of **"spherical extrusion"** to evaluate the volumes of Langerhans islets from their 2D microscopic image projections from a wide-field microscope, developed by [**Dr. Jiří Janáček**](https://github.com/jiri-janacek), [Laboratory of advanced microscopy and data analyses, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic](https://fgu.cas.cz/en/research-and-laboratories/service-departments/laboratory-of-advanced-microscopy-and-data-analyses/).
