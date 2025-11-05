@@ -13,7 +13,7 @@ The macro uses the technique of **"spherical extrusion"** to evaluate the volume
 
 ## Macro: Islet_Volume_Extrusions_Dialog.ijm
 
-This is basically a small automated script that helps a user process microscope images without having to click through everything manually. It’s designed to **measure the 3D volume of pancreatic islets from 2D image data**.
+This is a small automated script that helps a user process microscope images without having to click through everything manually. It’s designed to **measure the 3D volume of pancreatic islets from 2D image data**.
 
 Here’s what it does step by step in everyday terms:
 
