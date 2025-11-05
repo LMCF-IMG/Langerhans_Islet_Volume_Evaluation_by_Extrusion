@@ -2,8 +2,8 @@
 
 **Macro for [ImageJ/Fiji](https://fiji.sc/).**
 
-It was developed in cooperation with **Dr. David Habart**, from the [Laboratory for Pancreatic Islets, Center for Experimental Medicine, Institute for Clinical and
-Experimental Medicine (IKEM), Prague, Czech Republic](https://www.ikem.cz/en/centrum-exp-mediciny/oddeleni-centra/laborator-langerhansovych-ostruvku-lloe/a-1671/) who provided image data for testing and valuable feedback comments.
+It was developed in cooperation with **Dr. David Habart** from the [Laboratory for Pancreatic Islets, Center for Experimental Medicine, Institute for Clinical and
+Experimental Medicine (IKEM), Prague, Czech Republic](https://www.ikem.cz/en/centrum-exp-mediciny/oddeleni-centra/laborator-langerhansovych-ostruvku-lloe/a-1671/), who provided image data for testing and valuable feedback comments.
 
 ## Overview
 
