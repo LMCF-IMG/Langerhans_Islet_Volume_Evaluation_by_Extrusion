@@ -27,10 +27,15 @@ Here’s what it does step by step:
 
 **Evaluated parameters in the resulting table:**
 Islet ID - the number of the islet in the resulting picture;
+
 Islet Size [µm] -its diameter!;
+
 Area [µm2];
+
 Mean - mean intensity after spherical extrusion;
+
 Vext [µm3], [nl], [IEQ] - islet volume evaluated using spherical extrusion in units and Islet Equivalent;
+
 Vsphe [nl], [IEQ] - islet volume evaluated using a standard method in units and Islet Equivalent;
 
 **Fig. 1:** A macro dialog window requiring input parameters.
