@@ -25,6 +25,14 @@ Here’s what it does step by step:
 4. **Calculates volume and shape information** – it uses geometry to estimate how big (in 3D) the object would be.
 5. **Shows results and saves them** – at the end, it outputs measurements (volumes, area) both in a table or as images.
 
+**Evaluated parameters in the resulting table:**
+Islet ID - the number of the islet in the resulting picture;
+Islet Size [µm] -its diameter!;
+Area [µm2];
+Mean - mean intensity after spherical extrusion;
+Vext [µm3], [nl], [IEQ] - islet volume evaluated using spherical extrusion in units and Islet Equivalent;
+Vsphe [nl], [IEQ] - islet volume evaluated using a standard method in units and Islet Equivalent;
+
 **Fig. 1:** A macro dialog window requiring input parameters.
 
 <img width="707" height="199" alt="Macro_Dialog_Window" src="https://github.com/user-attachments/assets/8b3c5f0d-f9fb-4541-bc5d-e6bf306292c6" />
