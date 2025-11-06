@@ -13,6 +13,8 @@ The macro uses the technique of **"spherical extrusion"** to evaluate the volume
 
 ## Macro: Islet_Volume_Extrusions_Dialog.ijm
 
+Required plugins in Imagej/Fiji: [**Biomat**](https://github.com/jiri-janacek/biomat), **MorphoLibJ**(https://imagej.net/plugins/morpholibj)
+
 This is a small automated script that helps a user process microscope images without having to click through everything manually. It’s designed to **measure the 3D volume of pancreatic islets from 2D image data**.
 
 Here’s what it does step by step in everyday terms:
@@ -24,3 +26,5 @@ Here’s what it does step by step in everyday terms:
 5. **Shows results and saves them** – at the end, it outputs measurements (volumes, area) both in a table or as images.
 
 It’s a helper tool that lets a researcher take 2D microscope images of rounded biological structures and automatically estimate their 3D volumes, saving a lot of time compared to manual measurement.
+
+
