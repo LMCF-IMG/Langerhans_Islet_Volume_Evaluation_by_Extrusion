@@ -32,7 +32,7 @@ Here’s what it does step by step:
 
 * Area [µm2];
 
-* Mean - mean height after spherical extrusion;
+* Mean - mean height after spherical extrusion ??;
 
 * Vext [µm3], [nl], [IEQ] - islet volume evaluated using spherical extrusion in units and Islet Equivalent;
 
