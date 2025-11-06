@@ -42,6 +42,6 @@ Here’s what it does step by step:
 
 <img width="707" height="199" alt="Macro_Dialog_Window" src="https://github.com/user-attachments/assets/8b3c5f0d-f9fb-4541-bc5d-e6bf306292c6" />
 
-**Fig. 2:** Input binary image with islets (left); found, spherically extruded and evaluated islets (right).
+**Fig. 2:** Input binary image with islets (left); Result with found, spherically extruded and evaluated islets (right).
 
 <img width="941" height="403" alt="Example_Islets_Processing" src="https://github.com/user-attachments/assets/06d5d66e-2fa0-4db8-9cde-7be7ef4ebdac" />
