@@ -19,7 +19,7 @@ Here’s what it does step by step in everyday terms:
 
 1. **Asks the user for settings** – a dialog pops up so you can choose which folder with images to process and where to store the results, and set parameters such as Pixel size [µm], Which model to apply (Vmod=standard model, Vext=model with extrusion), Minimum islet size (diameter) [µm] expected.
 2. **Processes the image** – it prepares the image to isolate the objects of interest using 4-connectivity.
-3. **Performs “extrusions”** – this means it takes the 2D shape and stretches or projects it into 3D, often assuming the object is roughly spherical or symmetrical.
+3. **Performs “extrusions”** – this means it takes the 2D shape and projects it into 3D, assuming the object is roughly spherical or symmetrical.
 4. **Calculates volume and shape information** – it uses geometry to estimate how big (in 3D) the object would be.
 5. **Shows results and saves them** – at the end, it outputs measurements (volumes, area) both in a table or as images.
 
