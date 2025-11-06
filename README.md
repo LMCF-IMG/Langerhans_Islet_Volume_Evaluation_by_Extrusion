@@ -19,7 +19,7 @@ This is a small automated script that helps a user process microscope images wit
 
 Here’s what it does step by step:
 
-1. **Asks the user for settings** – a dialog pops up so you can choose *Input and Output directories*, and set parameters such as *Pixel size [µm]*, *Which model to apply* (Vmod=standard model, Vext=model with extrusion), *Minimum islet size (diameter) [µm]* expected.
+1. **Asks the user for settings** – a dialog pops up so you can choose *Input and Output directories*, and set parameters such as *Pixel size [µm]*, *Which model to apply* (Vmod=standard model, Vext=model with extrusion), *Minimum islet size (diameter) [µm]* expected. PNG and TIF image files are processed.
 2. **Processes the image** – it prepares the image to isolate islets using 4-connectivity.
 3. **Performs “extrusions”** – this means it takes the 2D shape and projects it into 3D, assuming the object is roughly spherical or symmetrical.
 4. **Calculates volume and shape information** – it uses geometry to estimate how big (in 3D) the object would be.
