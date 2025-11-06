@@ -26,17 +26,17 @@ Here’s what it does step by step:
 5. **Shows results and saves them** – at the end, it outputs measurements (volumes, area) both in a table or as images.
 
 **Evaluated parameters in the resulting table:**
-Islet ID - the number of the islet in the resulting picture;
+* Islet ID - the number of the islet in the resulting picture;
 
-Islet Size [µm] -its diameter!;
+* Islet Size [µm] - its diameter!;
 
-Area [µm2];
+* Area [µm2];
 
-Mean - mean intensity after spherical extrusion;
+* Mean - mean intensity after spherical extrusion;
 
-Vext [µm3], [nl], [IEQ] - islet volume evaluated using spherical extrusion in units and Islet Equivalent;
+* Vext [µm3], [nl], [IEQ] - islet volume evaluated using spherical extrusion in units and Islet Equivalent;
 
-Vsphe [nl], [IEQ] - islet volume evaluated using a standard method in units and Islet Equivalent;
+* Vsphe [nl], [IEQ] - islet volume evaluated using a standard method in units and Islet Equivalent;
 
 **Fig. 1:** A macro dialog window requiring input parameters.
 
