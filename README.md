@@ -15,16 +15,16 @@ The macro uses the technique of **"spherical extrusion"** to evaluate the volume
 
 Required plugins in Imagej/Fiji: [**Biomat**](https://github.com/jiri-janacek/biomat), [**MorphoLibJ**](https://imagej.net/plugins/morpholibj)
 
-This is a small automated script that helps a user process microscope images without having to click through everything manually. It’s designed to **measure the 3D volume of pancreatic islets from 2D image data**.
+This is a small automated script that helps a user process microscope images without having to click through everything manually. It’s designed to **measure the 3D volume of pancreatic islets from 2D image data**. It’s a helper tool that lets a researcher take 2D microscope images of rounded biological structures and automatically estimate their 3D volumes, saving a lot of time compared to manual measurement.
 
-Here’s what it does step by step in everyday terms:
+Here’s what it does step by step:
 
-1. **Asks the user for settings** – a dialog pops up so you can choose which folder with images to process and where to store the results, and set parameters such as Pixel size [µm], Which model to apply (Vmod=standard model, Vext=model with extrusion), Minimum islet size (diameter) [µm] expected.
+1. **Asks the user for settings** – a dialog pops up so you can choose *Input and Output directories*, and set parameters such as *Pixel size [µm]*, *Which model to apply* (Vmod=standard model, Vext=model with extrusion), *Minimum islet size (diameter) [µm]* expected.
 2. **Processes the image** – it prepares the image to isolate the objects of interest using 4-connectivity.
 3. **Performs “extrusions”** – this means it takes the 2D shape and projects it into 3D, assuming the object is roughly spherical or symmetrical.
 4. **Calculates volume and shape information** – it uses geometry to estimate how big (in 3D) the object would be.
 5. **Shows results and saves them** – at the end, it outputs measurements (volumes, area) both in a table or as images.
 
-It’s a helper tool that lets a researcher take 2D microscope images of rounded biological structures and automatically estimate their 3D volumes, saving a lot of time compared to manual measurement.
+**Fig. 1:** A macro dialog window requiring input parameters.
 
-
+<img width="707" height="199" alt="Macro_Dialog_Window" src="https://github.com/user-attachments/assets/8b3c5f0d-f9fb-4541-bc5d-e6bf306292c6" />
