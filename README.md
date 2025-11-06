@@ -28,7 +28,7 @@ Here’s what it does step by step:
 **Evaluated parameters in the resulting table:**
 * Islet ID - the number of the islet in the resulting picture;
 
-* Islet Size [µm] - its diameter!;
+* Islet Size [µm] - its diameter;
 
 * Area [µm2];
 
