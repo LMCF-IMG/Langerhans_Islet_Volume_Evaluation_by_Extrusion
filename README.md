@@ -26,12 +26,12 @@ Automated process step by step:
 6. **Results are displayed and saved:** graphical and tabular output.
 
 **Table of results:**
-Pixel size [µm/px]
-Minimum islet size [µm/px]
-Image ID;
-Islet index: for each image counted from 1;
-Islet area [µm2]: defined by the detected contour;
-Mean: height of the extrusion, corresponds to grayscale;
+Pixel size [µm/px]  
+Minimum islet size [µm/px]  
+Image ID;  
+Islet index: for each image counted from 1;  
+Islet area [µm2]: defined by the detected contour;  
+Mean: height of the extrusion, corresponds to grayscale;  
 Volume by Vmod or Vext [µm3], [nl], [IEQ]: IEQ Islet Equivalent Ricordi C, et al: Acta Diabetol Lat. 27, 1990: 185–195;
 
 **Fig. 1:** Dialog window.
