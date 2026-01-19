@@ -15,7 +15,7 @@ Spherical extrusion is constructed as a union of spheres entirely fitting within
 
 Required plugins in Imagej/Fiji: [**Biomat**](https://github.com/jiri-janacek/biomat), [**MorphoLibJ**](https://imagej.net/plugins/morpholibj)
 
-The input of this small automated script is a segmented image or a batch of images comprising a single or multiple islets settled at the bottom of a dish in orientations guided by their 3D shapes and gravity. The output includes corresponding images displaying the contours and the top portion of grayscaleencoded extrusion heights, along with csv file with calculated volumes
+The input of this small automated script is a segmented image or a batch of images comprising a single or multiple islets settled at the bottom of a dish in orientations guided by their 3D shapes and gravity. The output includes corresponding images displaying the contours and the top portion of greyscale encoded extrusion heights, along with csv file with calculated volumes
 
 Automated process step by step:
 1. **Dialog window pops up:** Input and Output directories; Pixel size [µm/px]; Minimum islet size [µm] (calculated automatically as the diameter of a cirle with same area as the projection area); model choice between Vmod (the Sphiracle model) and Vext (spherical extrusion). Both png and tiff formats, either greyscale or RGB are acceptable.
