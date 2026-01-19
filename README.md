@@ -17,13 +17,13 @@ Required plugins in Imagej/Fiji: [**Biomat**](https://github.com/jiri-janacek/bi
 
 The input of this small automated script is a segmented image of a batch of images comprising a single or multiple islets settled at the bottom of a dish in orientations guided by their 3D shapes and gravity. The output includes corresponding images displaying the contours and the top portion of grayscaleencoded extrusion heights, along with csv file with calculated volumes
 
-Here’s what it does step by step:
-
-1. **Asks the user for settings** – a dialog pops up so you can choose *Input and Output directories*, and set parameters such as *Pixel size [µm]*, *Which model to apply* (Vmod=standard model, Vext=model with extrusion), *Minimum islet size (diameter) [µm]* expected. PNG or TIF binary image files are expected as input, thought these can be in both in greyscale and RGB.
-2. **Processes the image** – it prepares the image to isolate islets using 4-connectivity.
-3. **Performs “extrusions”** – this means it takes the 2D shape and projects it into 3D, assuming the object is roughly spherical or symmetrical.
-4. **Calculates volume and shape information** – it uses geometry to estimate how big (in 3D) the object would be.
-5. **Shows results and saves them** – at the end, it outputs measurements (volumes, area) both in a table or as images.
+Automated process step by step:
+1. **Dialog window pops up:** Input and Output directories; Pixel size [µm/px]; Minimum islet size [µm] (calculated automatically as the diameter of a cirle with same area as the projection area); model choice between Vmod (the Sphiracle model) and Vext (spherical extrusion). Both png and tiff formats, either greyscaleor RGB are acceptable.
+2. **Individual islets are identified and numbered:** using 4-connectivity.
+3. **Islet size is calculated:** from projection area defined by the contour.
+4. **Contours are extruded:** either spherical extrusion alone (Vext) or with sizeadjusted height (Vmod).
+5. **Volume is calculated:** vertical symmetry of islets is assumed.
+6. **Results are displayed and saved:** graphical and tabular output.
 
 **Evaluated parameters in the resulting table:**
 * Islet ID - the number of the islet in the resulting picture;
