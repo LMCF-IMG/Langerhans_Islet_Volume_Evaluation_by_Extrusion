@@ -25,14 +25,15 @@ Automated process step by step:
 5. **Volume is calculated:** vertical symmetry of islets is assumed.
 6. **Results are displayed and saved:** graphical and tabular output.
 
-**Table of results:**
+**Table of results:**  
 Pixel size [µm/px]  
 Minimum islet size [µm/px]  
 Image ID;  
 Islet index: for each image counted from 1;  
 Islet area [µm2]: defined by the detected contour;  
 Mean: height of the extrusion, corresponds to grayscale;  
-Volume by Vmod or Vext [µm3], [nl], [IEQ]: IEQ Islet Equivalent Ricordi C, et al: Acta Diabetol Lat. 27, 1990: 185–195;
+Volume by Vmod or Vext [µm3], [nl], [IEQ]: IEQ Islet Equivalent  
+See [Ricordi C, et al: Acta Diabetol Lat. 27, 1990: 185–195](https://link.springer.com/article/10.1007/BF02581331);
 
 **Fig. 1:** Dialog window.
 
