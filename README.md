@@ -2,14 +2,12 @@
 
 **Macro for [ImageJ/Fiji](https://fiji.sc/).**
 
-This macro was developed in collaboration with Dr. David Habart from the [Laboratory for Pancreatic Islets, Center for Experimental Medicine, Institute for
+This macro was developed in collaboration with **Dr. David Habart** from the [Laboratory for Pancreatic Islets, Center for Experimental Medicine, Institute for
 Clinical and Experimental Medicine (IKEM), Prague, Czech Republic](https://www.ikem.cz/en/centrum-exp-mediciny/oddeleni-centra/laborator-langerhansovych-ostruvku-lloe/a-1671/), who initiated the request and provided image data for testing and feedback.
 
 ## Overview
 
-The macro uses the technique of **"spherical extrusion"** to evaluate the volumes of Langerhans islets from their 2D microscopic image projections from a wide-field microscope, developed by [**Dr. Jiří Janáček**](https://github.com/jiri-janacek), [Laboratory of Advanced Microscopy and Data Analyses, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic](https://fgu.cas.cz/en/research-and-laboratories/service-departments/laboratory-of-advanced-microscopy-and-data-analyses/).
-
-[**Spherical extrusion**](https://imagej.net/plugins/biomat#morphological-operations-with-quadratic-structuring-function) is an ImageJ/Fiji plugin that estimates the 3D volume of a shape from a single 2D picture (its silhouette): Think of your 2D object as a gentle “bump” made of spherical slices; the plugin figures out how tall that bump would be at every point inside the outline and then totals it up. In practice, it produces a height map (how “tall” the bump is across the object) and uses a simple rule of thumb to get volume: Volume ≈ 2 × (area of the 2D shape) × (mean height). It also shows a quick 3D reconstruction of the inferred object so you can visually check the result. This tool lives in ImageJ/Fiji under **Plugins → Biomat → Spherical Extrusion** and is meant for roughly roundish objects where that spherical “bump” assumption is reasonable.
+The script offers two options for calculating the volume of 3D cell clusters, a specific and a generic approach. The volume of isolated pancreatic islets is calculated from their 2D projections in a dish, using an empirical model, Sphiracle, that combines spherical extrusion of the projection contours with size-dependent height adjustments specific to pancreatic islets from mouse, rat, and human. Alternatively, the script calculates the volume of spherical extrusion alone, which is potentially applicable to other 3D cell clusters. The ImageJ/Fiji spherical extrusion plugin used here, as well as the islet-specific height adjustment formula, were developed by [**Dr. Jiří Janáček**](https://github.com/jiri-janacek), [Laboratory of Advanced Microscopy and Data Analyses, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic](https://fgu.cas.cz/en/research-and-laboratories/service-departments/laboratory-of-advanced-microscopy-and-data-analyses/), in collaboration with **Dr. David Habart**. It is available from [here](https://imagej.net/plugins/biomat#morphological-operations-with-quadratic-structuringfunction).
 
 ## Macro: Islet_Volume_Extrusions_Dialog.ijm
 
