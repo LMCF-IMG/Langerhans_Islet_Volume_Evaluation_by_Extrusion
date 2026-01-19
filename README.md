@@ -25,23 +25,19 @@ Automated process step by step:
 5. **Volume is calculated:** vertical symmetry of islets is assumed.
 6. **Results are displayed and saved:** graphical and tabular output.
 
-**Evaluated parameters in the resulting table:**
-* Islet ID - the number of the islet in the resulting picture;
+**Table of results:**
+Pixel size [µm/px]
+Minimum islet size [µm/px]
+Image ID;
+Islet index: for each image counted from 1;
+Islet area [µm2]: defined by the detected contour;
+Mean: height of the extrusion, corresponds to grayscale;
+Volume by Vmod or Vext [µm3], [nl], [IEQ]: IEQ Islet Equivalent Ricordi C, et al: Acta Diabetol Lat. 27, 1990: 185–195;
 
-* Islet Size [µm] - its diameter;
-
-* Area [µm2];
-
-* Mean - mean height after spherical extrusion ??;
-
-* Vext [µm3], [nl], [IEQ] - islet volume evaluated using spherical extrusion in units and Islet Equivalent;
-
-* Vsphe [nl], [IEQ] - islet volume evaluated using a standard method in units and Islet Equivalent;
-
-**Fig. 1:** A macro dialog window requiring input parameters.
+**Fig. 1:** Dialog window.
 
 <img width="707" height="199" alt="Macro_Dialog_Window" src="https://github.com/user-attachments/assets/8b3c5f0d-f9fb-4541-bc5d-e6bf306292c6" />
 
-**Fig. 2:** Input binary image with islets (left); Result with found, spherically extruded and evaluated islets (right).
+**Fig. 2:**  Input image (left); Output image, contours and extruded heights of the identified islets with (right).
 
 <img width="941" height="403" alt="Example_Islets_Processing" src="https://github.com/user-attachments/assets/06d5d66e-2fa0-4db8-9cde-7be7ef4ebdac" />
