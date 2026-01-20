@@ -40,6 +40,7 @@ See [Ricordi C, et al: Acta Diabetol Lat. 27, 1990: 185–195](https://link.spri
 
 <img width="707" height="199" alt="Macro_Dialog_Window" src="https://github.com/user-attachments/assets/8b3c5f0d-f9fb-4541-bc5d-e6bf306292c6" />
 
+
 **Fig. 2:**  Input image (left); Output image, contours and extruded heights of the identified islets with (right).
 
 <img width="941" height="403" alt="Example_Islets_Processing" src="https://github.com/user-attachments/assets/06d5d66e-2fa0-4db8-9cde-7be7ef4ebdac" />
