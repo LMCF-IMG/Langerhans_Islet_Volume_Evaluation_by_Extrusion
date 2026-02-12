@@ -32,8 +32,10 @@ Image ID;
 Islet index: for each image counted from 1;  
 Islet area [µm2]: defined by the detected contour;  
 Mean: height of the extrusion, corresponds to grayscale;  
-Volume by Vmod or Vext [µm3], [nl], [IEQ];  
-(IEQ = Islet Equivalent)  
+Volume from contours by Vmod or Vext [µm3], [nl], [IEQ];  
+Volume from size by Spherical model, Vsphe [nl], [IEQ];  
+Volume from size by Ricordi conversion table, Vrico [nl], [IEQ];  
+(IEQ = Islet Equivalent ~ 1.7671 nL)  
 See [Ricordi C, et al: Acta Diabetol Lat. 27, 1990: 185–195](https://link.springer.com/article/10.1007/BF02581331);
 
 **Fig. 1:** Dialog window.  
