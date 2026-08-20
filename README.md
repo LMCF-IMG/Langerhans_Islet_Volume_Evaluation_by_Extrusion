@@ -7,7 +7,7 @@ Clinical and Experimental Medicine (IKEM), Prague, Czech Republic](https://www.i
 
 ## Overview
 
-The script offers two options for calculating the volume of 3D cell clusters, a specific and a generic approach. The volume of isolated pancreatic islets is calculated from their 2D projections in a dish, using an empirical model, Sphiracle, that combines spherical extrusion of the projection contours with size-dependent height adjustments specific to pancreatic islets from mouse, rat, and human. Alternatively, the script calculates the volume of spherical extrusion alone, which is potentially applicable to other 3D cell clusters. The ImageJ/Fiji spherical extrusion plugin used here, as well as the islet-specific height adjustment formula, were developed by [**Dr. Jiří Janáček**](https://github.com/jiri-janacek), [Laboratory of Advanced Microscopy and Data Analyses, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic](https://fgu.cas.cz/en/research-and-laboratories/service-departments/laboratory-of-advanced-microscopy-and-data-analyses/), in collaboration with **Dr. David Habart**. It is available [here](https://imagej.net/plugins/biomat#morphological-operations-with-quadratic-structuringfunction).
+The script offers two options for calculating the volume of 3D cell clusters, a specific and a generic approach. The volume of isolated pancreatic islets is calculated from their 2D projections in a dish, using an empirical model, Sphiracle, that combines spherical extrusion of the projection contours with size-dependent height adjustments specific to pancreatic islets from mouse, rat, and human. Alternatively, the script calculates the volume of spherical extrusion alone, which is potentially applicable to other 3D cell clusters. Both models are sensitive to interior voids, which may or may not represent segmentation artifacts. User interface enables filling the void if necessary. The ImageJ/Fiji spherical extrusion plugin used here, as well as the islet-specific height adjustment formula, were developed by [**Dr. Jiří Janáček**](https://github.com/jiri-janacek), [Laboratory of Advanced Microscopy and Data Analyses, Institute of Physiology of the Czech Academy of Sciences, Prague, Czech Republic](https://fgu.cas.cz/en/research-and-laboratories/service-departments/laboratory-of-advanced-microscopy-and-data-analyses/), in collaboration with **Dr. David Habart**. It is available [here](https://imagej.net/plugins/biomat#morphological-operations-with-quadratic-structuringfunction).
 
 Spherical extrusion is constructed as a union of spheres entirely fitting within the object contour and with centers in the plane of the contour. Volume calculation assumes vertical symmetry of the extruded object (multiplication by 2). For pancreatic islets, the height of the spherically extruded contour must be reduced to account for size-dependent flattening, hence the Sphiracle model.
 
@@ -18,7 +18,7 @@ Required plugins in Imagej/Fiji: [**Biomat**](https://github.com/jiri-janacek/bi
 The input of this small automated script is a segmented image or a batch of images comprising a single or multiple islets settled at the bottom of a dish in orientations guided by their 3D shapes and gravity. The output includes corresponding images displaying the contours and the top portion of greyscale encoded extrusion heights, along with csv file with calculated volumes
 
 Automated process step by step:
-1. **Dialog window pops up:** Input and Output directories; Pixel size [µm/px]; Minimum islet size [µm] (calculated automatically as the diameter of a cirle with same area as the projection area); model choice between Vmod (the Sphiracle model) and Vext (spherical extrusion). Both png and tiff formats, either greyscale or RGB are acceptable.
+1. **Dialog window pops up:** Input and Output directories; Pixel size [µm/px]; Minimum islet size [µm] (calculated automatically as the diameter of a cirle with same area as the projection area); model choice between Vmod (the Sphiracle model) and Vext (spherical extrusion); Fill voids option. Both png and tiff formats, either greyscale or RGB are acceptable.
 2. **Individual islets are identified and numbered:** using 4-connectivity.
 3. **Islet size is calculated:** from projection area defined by the contour.
 4. **Contours are extruded:** either spherical extrusion alone (Vext) or with size-adjusted height (Vmod).
@@ -26,8 +26,9 @@ Automated process step by step:
 6. **Results are displayed and saved:** graphical and tabular output.
 
 **Table of results:**  
-Pixel size [µm/px]  
-Minimum islet size [µm/px]  
+Pixel size [µm/px];  
+Minimum islet size [µm/px];  
+Interior voids filled: yes/no;  
 Image ID;  
 Islet index: for each image counted from 1;  
 Islet area [µm2]: defined by the detected contour;  
