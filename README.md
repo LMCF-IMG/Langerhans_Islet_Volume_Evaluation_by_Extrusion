@@ -18,12 +18,11 @@ Required plugins in Imagej/Fiji: [**Biomat**](https://github.com/jiri-janacek/bi
 The input of this small automated script is a segmented image or a batch of images comprising a single or multiple islets settled at the bottom of a dish in orientations guided by their 3D shapes and gravity. The output includes corresponding images displaying the contours and the top portion of greyscale encoded extrusion heights, along with csv file with calculated volumes
 
 Automated process step by step:
-1. **Dialog window pops up:** Input and Output directories; Pixel size [µm/px]; Minimum islet size [µm] (calculated automatically as the diameter of a cirle with same area as the projection area); model choice between Vmod (the Sphiracle model) and Vext (spherical extrusion); Fill voids option. Both png and tiff formats, either greyscale or RGB are acceptable.
-2. **Individual islets are identified and numbered:** using 4-connectivity.
-3. **Islet size is calculated:** from projection area defined by the contour.
-4. **Contours are extruded:** either spherical extrusion alone (Vext) or with size-adjusted height (Vmod).
-5. **Volume is calculated:** vertical symmetry of islets is assumed.
-6. **Results are displayed and saved:** graphical and tabular output.
+1. **Dialog window pops up:** Input and Output directories; Pixel size [µm/px]; Minimum islet size [µm] (calculated automatically as the diameter of a circle with same area as the projection area); model choice between Vmod (the Sphiracle model) and Vext (spherical extrusion); Fill voids option. Both png and tiff formats, either greyscale or RGB are acceptable.
+2. **Islet size:** calculated from projection area defined by the contour.
+3. **Contours are extruded:** either spherical extrusion alone (Vext) or with size-adjusted height (Vmod).
+4. **Volume is calculated:** vertical symmetry of islets is assumed.
+5. **Results are displayed and saved:** graphical and tabular output.
 
 **Table of results:**  
 Pixel size [µm/px];  
@@ -46,6 +45,6 @@ See [Ricordi C, et al: Acta Diabetol Lat. 27, 1990: 185–195](https://link.spri
 **Fig. 2:**  Input image (left); Output image, contours and extruded heights of the identified islets (right).  
 <img width="941" height="403" alt="Example_Islets_Processing" src="https://github.com/user-attachments/assets/06d5d66e-2fa0-4db8-9cde-7be7ef4ebdac" />
 
-**Fig. 3:**  Input raw image (left); Input binary segmented image with holes; Output image, contours and extruded heights of the identified islets, holes were applied for extrusions (right).  
+**Fig. 3:**  Original raw image (left); Input: binary segmented image with a valid void surrounded by adjacent islets (center); Output image [Model: extrusion, Fill interior voids: unchecked]: contours and extruded heights of the identified islets, background value in the place of the valid void (right).  
 <img width="2820" height="849" alt="260820_islet_with_holes" src="https://github.com/user-attachments/assets/3bd8ab69-be08-4311-86f4-c96e0be6afae" />
 
